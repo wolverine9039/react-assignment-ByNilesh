@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  react-assignment:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: react-assignment-app
+    ports:
+      - "8081:80"
+      - "8443:443"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - assignment-network
+    # Optional: Add volume for logs
+    # volumes:
+    #   - ./logs:/var/log/nginx
+
+networks:
+  assignment-network:
+    driver: bridge
