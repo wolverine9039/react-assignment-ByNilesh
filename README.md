@@ -4,7 +4,7 @@ A modern React application built with Vite, featuring automated CI/CD deployment
 
 ## 🚀 Live Demo
 
-**Deployment URL**: `http://<EC2-PUBLIC-IP>:8081`
+**Deployment URL**: `reactbynilesh.buildwithmayank.tech`
 
 > The application is automatically deployed via Jenkins CI/CD pipeline on every push to the repository.
 
