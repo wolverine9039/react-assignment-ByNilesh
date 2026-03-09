@@ -1,7 +1,7 @@
 pipeline {
     agent any
     
-    // Define environment variables
+    // Define environment variables 
     environment {
         PROJECT_NAME = 'react-assignment'
         DOCKER_IMAGE = 'react-assignment'
@@ -22,7 +22,7 @@ pipeline {
     stages {
         stage('Environment Check') {
             steps {
-                echo '🔍 Checking build environment...'
+                echo '🔍 Checking build environment ojas...'
                 sh '''
                     echo "════════════════════════════════════════"
                     echo "📋 System Information"
