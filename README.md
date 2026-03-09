@@ -2,9 +2,9 @@
 
 A modern React application built with Vite, featuring automated CI/CD deployment using Jenkins, Docker, and AWS EC2.
 
-## 🚀 Live Demo
+## Live Demo
 
-**Deployment URL**: `reactbynilesh.buildwithmayank.tech`
+**Deployment URL**: `http://<EC2-PUBLIC-IP>:8081`
 
 > The application is automatically deployed via Jenkins CI/CD pipeline on every push to the repository.
 
@@ -17,13 +17,13 @@ A modern React application built with Vite, featuring automated CI/CD deployment
 - **Infrastructure**: AWS EC2
 - **Container Orchestration**: Docker Compose
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 GitHub Repository → Jenkins (CI/CD) → Docker Build → EC2 Deployment → Port 8081
 ```
 
-## 🛠️ Local Development
+## Local Development
 
 ### Prerequisites
 - Node.js 20+
@@ -80,7 +80,7 @@ docker-compose logs -f
 docker-compose down
 ```
 
-## 🔄 CI/CD Pipeline
+## CI/CD Pipeline
 
 The project uses Jenkins for automated deployment with the following stages:
 
@@ -99,7 +99,7 @@ The project uses Jenkins for automated deployment with the following stages:
 - Automatic cleanup of old images
 - Build retention (last 10 builds)
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 react-assignment-ByNilesh/
@@ -117,7 +117,7 @@ react-assignment-ByNilesh/
 └── package.json          # Dependencies and scripts
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 ### Environment Variables
 No environment variables required for basic deployment.
@@ -127,30 +127,6 @@ No environment variables required for basic deployment.
 - **Production**: 8081 (mapped to container port 80)
 - **HTTPS**: 8443 (mapped to container port 443)
 
-## 🚀 Deployment Instructions
-
-### Manual Deployment to EC2
-
-1. **SSH into EC2 instance**
-   ```bash
-   ssh -i your-key.pem ubuntu@<EC2-PUBLIC-IP>
-   ```
-
-2. **Clone repository**
-   ```bash
-   git clone <repository-url>
-   cd react-assignment-ByNilesh
-   ```
-
-3. **Build and deploy**
-   ```bash
-   docker-compose up -d
-   ```
-
-4. **Verify deployment**
-   ```bash
-   curl http://localhost:8081
-   ```
 
 ### Automated Deployment via Jenkins
 
@@ -181,15 +157,15 @@ No environment variables required for basic deployment.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 This project is part of a training assignment.
 
 ## 👤 Author
 
-**Nilesh**
+**BXA Interns**
 
 ---
 
-Built with ❤️ using React + Vite + Docker + Jenkins
+Built using React + Vite + Docker + Jenkins + AWS + Cloudflare
 
